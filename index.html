@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +20,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Remove the no-js class ASAP so CSS fallbacks switch off -->
-  <script>document.documentElement.classList.remove('no-js');</script>
-
   <a href="#main" class="skip-to-content">Skip to main content</a>
 
   <header class="header">
@@ -47,10 +44,233 @@
 
   <main id="main">
     <!-- Hero -->
-    <section id="hero" class="hero section reveal">
+    <section id="hero" class="hero section">
       <div class="hero__content container">
         <h1 class="hero__title">Launch your AI & tech startup with confidence</h1>
         <p class="hero__subtitle">Starter Lab is your launchpad — beginner-friendly tools, startup checklists, and founder-friendly tips to turn your idea into a business.</p>
         <div class="hero__cta">
           <a href="#newsletter" class="button button--primary">Get Started</a>
-          <a href="#resources" class="button button--secondary">Explore
+          <a href="#resources" class="button button--secondary">Explore Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About (short, scannable) -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section__title">What is Starter Lab?</h2>
+        <p class="about__lead">A calm, practical place to learn the essentials, pick the right AI tools, and follow step-by-step playbooks — without the noise.</p>
+      </div>
+    </section>
+
+    <!-- Benefits (icons refined to 24–32px, consistent line style, better spacing) -->
+    <section id="benefits" class="benefits section">
+      <div class="container">
+        <h2 class="section__title">How Starter Lab helps</h2>
+
+        <div class="benefits__grid">
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <!-- Zap -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M13 2L3 14h9l-1 8 8-12h-9z" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Learn quickly</h3>
+            <p class="benefit-card__desc">Short, plain-English guides that get you moving in minutes — not weeks.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <!-- Book -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Practical playbooks</h3>
+            <p class="benefit-card__desc">Follow proven checklists for validation, MVP, launch, and first customers.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <!-- CPU -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">AI tools guidance</h3>
+            <p class="benefit-card__desc">Choose the right AI tools and workflows — and avoid costly detours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="resources section">
+      <div class="container">
+        <h2 class="section__title">Featured resources</h2>
+        <div class="resource-list">
+          <article class="resource-card">
+            <h3 class="resource-card__title">AI Startup 101: Quick Guide</h3>
+            <p class="resource-card__desc">The fundamentals of AI startups, explained simply.</p>
+            <a href="#" class="resource-card__link" aria-label="View AI Startup 101 Quick Guide">View</a>
+          </article>
+
+          <article class="resource-card">
+            <h3 class="resource-card__title">Beginner’s Guide to MVPs</h3>
+            <p class="resource-card__desc">A practical path to your first Minimum Viable Product.</p>
+            <a href="#" class="resource-card__link" aria-label="View Beginner’s Guide to MVPs">View</a>
+          </article>
+
+          <article class="resource-card">
+            <h3 class="resource-card__title">Top 10 AI Tools for Startups</h3>
+            <p class="resource-card__desc">Save time and money with these proven picks.</p>
+            <a href="#" class="resource-card__link" aria-label="View Top 10 AI Tools for Startups">View</a>
+          </article>
+
+          <article class="resource-card">
+            <h3 class="resource-card__title">Startup Launch Checklist</h3>
+            <p class="resource-card__desc">A clean list to keep momentum to launch day.</p>
+            <a href="#" class="resource-card__link" aria-label="View Startup Launch Checklist">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <h2 class="section__title">What new founders say</h2>
+        <div class="testimonial-list">
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">“Starter Lab gave me the clarity and confidence to launch. Simple and powerful.”</blockquote>
+            <figcaption class="testimonial__author">— Alex P., Founder</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">“Beginner-friendly guides saved me weeks. It feels like a mentor in your pocket.”</blockquote>
+            <figcaption class="testimonial__author">— Jamie L., First-time founder</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter section">
+      <div class="container">
+        <h2 class="section__title">Join our newsletter</h2>
+        <p class="newsletter__text">Weekly tips, tools, and checklists to launch and grow your startup. No spam — ever.</p>
+
+        <form action="#" method="get" class="newsletter__form">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" class="newsletter__input" placeholder="Enter your email" required />
+          <button type="submit" class="button button--primary newsletter__button">Subscribe</button>
+        </form>
+
+        <p class="newsletter__note">We respect your privacy. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-band section">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__title">Ready to launch your idea?</h2>
+        <a href="#newsletter" class="button button--primary cta-band__button">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <nav aria-label="Footer">
+        <div class="footer__links">
+          <a href="#hero" class="footer__link">Home</a>
+          <a href="#about" class="footer__link">About</a>
+          <a href="#resources" class="footer__link">Resources</a>
+          <a href="#newsletter" class="footer__link">Newsletter</a>
+          <a href="#" class="footer__link">Privacy</a>
+          <a href="#" class="footer__link">Terms</a>
+        </div>
+      </nav>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" class="icon icon--social"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="icon icon--social"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copyright">&copy; 2025 Starter Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle + focus trap + section highlighting + reduced motion respect
+    (function () {
+      const toggle = document.querySelector('.header__toggle');
+      const nav = document.getElementById('nav-menu');
+      const links = nav.querySelectorAll('a.nav__link');
+      let lastFocus = null;
+
+      function openMenu() {
+        lastFocus = document.activeElement;
+        nav.classList.add('nav--open');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Close menu');
+        if (links.length) links[0].focus();
+      }
+      function closeMenu() {
+        nav.classList.remove('nav--open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        if (lastFocus) lastFocus.focus();
+      }
+
+      toggle.addEventListener('click', () => {
+        nav.classList.contains('nav--open') ? closeMenu() : openMenu();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('nav--open')) {
+          e.preventDefault(); closeMenu();
+        }
+        if (nav.classList.contains('nav--open') && e.key === 'Tab') {
+          const first = links[0], last = links[links.length - 1];
+          if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault(); last.focus();
+          } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault(); first.focus();
+          }
+        }
+      });
+
+      // Active link on scroll
+      const sections = document.querySelectorAll('main section[id]');
+      const map = {}; links.forEach(l => { if (l.hash) map[l.hash.slice(1)] = l; });
+      let active = null;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            if (map[id]) {
+              if (active) active.classList.remove('nav__link--active');
+              active = map[id];
+              active.classList.add('nav__link--active');
+            }
+          }
+        });
+      }, { threshold: 0.55 });
+      sections.forEach(s => observer.observe(s));
+    })();
+  </script>
+</body>
+</html>
