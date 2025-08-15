@@ -1,42 +1,282 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FounderHub</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
-    header { background-color: #0b0c10; color: #fff; padding: 80px 20px; text-align: center; }
-    .container { max-width: 960px; margin: auto; padding: 20px; }
-    h1 { font-size: 2.8em; margin-bottom: 0.2em; }
-    .cta { display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #1f8ef1; color: #fff; text-decoration: none; border-radius: 6px; }
-    main section { background: #fff; margin: 20px 0; padding: 40px 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,.1); }
-    footer { background-color: #222; color: #aaa; text-align: center; padding: 20px 0; font-size: .9em; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter Lab – Your launchpad for AI & tech startups</title>
+  <meta name="description" content="Starter Lab helps first-time founders launch AI and tech startups with beginner-friendly tools, checklists, and tips." />
+  <link rel="canonical" href="https://starterlab.example.com/" />
+  <meta property="og:title" content="Starter Lab – Launchpad for AI & Tech Startups" />
+  <meta property="og:description" content="Beginner-friendly tools, startup checklists, and founder-friendly tips to kickstart your tech business." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://starterlab.example.com/" />
+  <meta property="og:image" content="https://starterlab.example.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Starter Lab – Launchpad for AI & Tech Startups" />
+  <meta name="twitter:description" content="Beginner-friendly tools, startup checklists, and tips for launching your AI/tech startup." />
+  <meta name="twitter:image" content="https://starterlab.example.com/og-image.png" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to FounderHub</h1>
-    <p>Your launchpad for AI & tech startups.</p>
-    <a class="cta" href="#get-started">Get Started</a>
+  <a href="#main" class="skip-to-content">Skip to main content</a>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo">Starter Lab</a>
+      <button class="header__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <!-- Hamburger icon -->
+        <span class="header__toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="nav-menu" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#resources" class="nav__link">Resources</a></li>
+          <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+          <li class="nav__item nav__item--cta"><a href="#newsletter" class="nav__link nav__link--button">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
-  <main class="container">
-    <section id="get-started">
-      <h2>What We Do</h2>
-      <p>FounderHub helps aspiring founders learn, build, and launch their tech ventures with practical guides and AI‑powered tools.</p>
+  <main id="main">
+    <section id="hero" class="hero section">
+      <div class="hero__content container">
+        <h1 class="hero__title">Launch your AI & tech startup with confidence</h1>
+        <p class="hero__subtitle">Starter Lab is your launchpad – offering beginner-friendly tools, startup checklists, and founder-friendly tips to turn your idea into a business.</p>
+        <div class="hero__cta">
+          <a href="#newsletter" class="button button--primary">Get Started</a>
+          <a href="#resources" class="button button--secondary">Explore Resources</a>
+        </div>
+      </div>
+      <!-- Subtle background illustration could be added via CSS or SVG -->
     </section>
-
-    <section>
-      <h2>Resources</h2>
-      <ul>
-        <li>✅ Beginner AI tools</li>
-        <li>✅ Startup checklists</li>
-        <li>✅ Founder‑friendly tips</li>
-      </ul>
+    <section id="benefits" class="benefits section">
+      <div class="container">
+        <h2 class="section__title">How Starter Lab Helps You</h2>
+        <div class="benefits__cards">
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <!-- Lightning bolt icon -->
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon--zap">
+                <path d="M13 2L3 14h9l-1 8 8-12h-9z" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Learn Quickly</h3>
+            <p class="benefit-card__desc">Beginner-friendly guides and tutorials help you grasp AI and tech basics without overwhelm.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <!-- Book icon -->
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon--book">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Practical Playbooks</h3>
+            <p class="benefit-card__desc">Follow step-by-step startup checklists and proven playbooks to move forward with clarity.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <!-- CPU icon -->
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon--cpu">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <line x1="9" y1="1" x2="9" y2="4" />
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="9" y1="20" x2="9" y2="23" />
+                <line x1="15" y1="20" x2="15" y2="23" />
+                <line x1="20" y1="9" x2="23" y2="9" />
+                <line x1="20" y1="14" x2="23" y2="14" />
+                <line x1="1" y1="9" x2="4" y2="9" />
+                <line x1="1" y1="14" x2="4" y2="14" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">AI Tools Guidance</h3>
+            <p class="benefit-card__desc">Get recommendations on AI tools and learn how to leverage them effectively in your startup journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resources" class="resources section">
+      <div class="container">
+        <h2 class="section__title">Featured Resources</h2>
+        <div class="resource-list">
+          <div class="resource-card">
+            <h3 class="resource-card__title">AI Startup 101: Quick Guide</h3>
+            <p class="resource-card__desc">Learn the fundamentals of launching an AI-driven startup in simple terms.</p>
+            <a href="#" class="resource-card__link">View</a>
+          </div>
+          <div class="resource-card">
+            <h3 class="resource-card__title">Beginner’s Guide to MVPs</h3>
+            <p class="resource-card__desc">Step-by-step guide to building your first Minimum Viable Product in tech.</p>
+            <a href="#" class="resource-card__link">View</a>
+          </div>
+          <div class="resource-card">
+            <h3 class="resource-card__title">Top 10 AI Tools for Startups</h3>
+            <p class="resource-card__desc">Discover essential AI tools and how to use them to kickstart your project.</p>
+            <a href="#" class="resource-card__link">View</a>
+          </div>
+          <div class="resource-card">
+            <h3 class="resource-card__title">Startup Launch Checklist</h3>
+            <p class="resource-card__desc">Ensure you’re ready to launch with this comprehensive startup checklist.</p>
+            <a href="#" class="resource-card__link">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <h2 class="section__title">What New Founders Say</h2>
+        <div class="testimonial-list">
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">“Starter Lab gave me the clarity and confidence to launch my startup. The resources are simple but powerful.”</blockquote>
+            <figcaption class="testimonial__author">– Alex P., Founder of TechCo</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">“The beginner-friendly guides saved me weeks of research. It’s like having a mentor on call – highly recommended!”</blockquote>
+            <figcaption class="testimonial__author">– Jamie L., First-time AI founder</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter" class="newsletter section">
+      <div class="container">
+        <h2 class="section__title">Join Our Newsletter</h2>
+        <p class="newsletter__text">Get free weekly tips, tools, and checklists to launch and grow your startup. No spam, ever.</p>
+        <form action="#" method="get" class="newsletter__form">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" class="newsletter__input" placeholder="Enter your email" required />
+          <button type="submit" class="button button--primary newsletter__button">Subscribe</button>
+        </form>
+        <p class="newsletter__note">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </section>
+    <section class="cta-band section">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__title">Ready to launch your idea?</h2>
+        <a href="#newsletter" class="button button--primary cta-band__button">Get Started</a>
+      </div>
     </section>
   </main>
-
-  <footer>© 2025 FounderHub.tech – All rights reserved.</footer>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__links">
+        <a href="#hero" class="footer__link">Home</a>
+        <a href="about.html" class="footer__link">About</a>
+        <a href="#resources" class="footer__link">Resources</a>
+        <a href="blog.html" class="footer__link">Blog</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="#" class="footer__link">Privacy</a>
+        <a href="#" class="footer__link">Terms</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Twitter">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon--social">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon--social">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copyright">&copy; 2025 Starter Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Mobile navigation toggle and focus trap
+    (function() {
+      const toggleButton = document.querySelector('.header__toggle');
+      const navMenu = document.getElementById('nav-menu');
+      const navLinks = navMenu.querySelectorAll('a.nav__link');
+      let lastFocusedElement = null;
+      function openMenu() {
+        lastFocusedElement = document.activeElement;
+        navMenu.classList.add('nav--open');
+        toggleButton.setAttribute('aria-expanded', 'true');
+        toggleButton.setAttribute('aria-label', 'Close menu');
+        // Focus first menu link
+        if(navLinks.length > 0) navLinks[0].focus();
+      }
+      function closeMenu() {
+        navMenu.classList.remove('nav--open');
+        toggleButton.setAttribute('aria-expanded', 'false');
+        toggleButton.setAttribute('aria-label', 'Open menu');
+        if(lastFocusedElement) lastFocusedElement.focus();
+      }
+      toggleButton.addEventListener('click', function() {
+        if(navMenu.classList.contains('nav--open')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+      // Close menu on Escape key
+      document.addEventListener('keydown', function(e) {
+        if(e.key === 'Escape' && navMenu.classList.contains('nav--open')) {
+          e.preventDefault();
+          closeMenu();
+        }
+        // Focus trap: loop focus within open menu
+        if(navMenu.classList.contains('nav--open') && e.key === 'Tab') {
+          if(e.shiftKey) {
+            if(document.activeElement === navLinks[0]) {
+              e.preventDefault();
+              navLinks[navLinks.length - 1].focus();
+            }
+          } else {
+            if(document.activeElement === navLinks[navLinks.length - 1]) {
+              e.preventDefault();
+              navLinks[0].focus();
+            }
+          }
+        }
+      });
+      // Smooth scroll is handled by CSS (scroll-behavior)
+      // Highlight current section link on scroll
+      const sections = document.querySelectorAll('main section[id]');
+      const navLinkMap = {};
+      navLinks.forEach(link => {
+        if(link.hash && link.hash.startsWith('#')) {
+          navLinkMap[link.hash.slice(1)] = link;
+        }
+      });
+      let activeLink = null;
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            if(navLinkMap[id]) {
+              if(activeLink) activeLink.classList.remove('nav__link--active');
+              activeLink = navLinkMap[id];
+              activeLink.classList.add('nav__link--active');
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+      sections.forEach(section => observer.observe(section));
+      // Reveal sections with animation on scroll
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('section--visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.section').forEach(section => {
+        revealObserver.observe(section);
+      });
+    })();
+  </script>
 </body>
 </html>
