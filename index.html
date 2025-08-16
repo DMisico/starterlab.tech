@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Starter Lab – Your launchpad for AI & tech startups</title>
-  <meta name="description" content="Starter Lab helps first-time founders launch AI and tech startups with beginner-friendly tools, checklists, and tips." />
+  <meta name="description" content="Starter Lab helps first-time founders launch AI and tech startups with beginner-friendly tools, playbooks, and tips." />
   <link rel="canonical" href="https://starterlab.example.com/" />
   <meta property="og:title" content="Starter Lab – Launchpad for AI & Tech Startups" />
   <meta property="og:description" content="Beginner-friendly tools, startup checklists, and founder-friendly tips to kickstart your tech business." />
@@ -16,15 +16,15 @@
   <meta name="twitter:description" content="Beginner-friendly tools, startup checklists, and tips for launching your AI/tech startup." />
   <meta name="twitter:image" content="https://starterlab.example.com/og-image.png" />
   <link rel="icon" href="favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="no-js">
   <a href="#main" class="skip-to-content">Skip to main content</a>
 
   <header class="header">
     <div class="header__inner container">
-      <a href="#hero" class="header__logo">Starter Lab</a>
+      <a href="#hero" class="header__logo" aria-label="Starter Lab home">Starter Lab</a>
 
       <button class="header__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <span class="header__toggle-icon" aria-hidden="true"></span>
@@ -36,26 +36,48 @@
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#resources" class="nav__link">Resources</a></li>
           <li class="nav__item"><a href="#newsletter" class="nav__link">Newsletter</a></li>
-          <li class="nav__item nav__item--cta"><a href="#newsletter" class="nav__link nav__link--button">Get Started</a></li>
+          <li class="nav__item nav__item--cta"><a href="#newsletter" class="nav__link nav__link--button">Get Starter Kit</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section id="hero" class="hero section">
-      <div class="hero__content container">
-        <h1 class="hero__title">Launch your AI & tech startup with confidence</h1>
-        <p class="hero__subtitle">Starter Lab is your launchpad — beginner-friendly tools, startup checklists, and founder-friendly tips to turn your idea into a business.</p>
-        <div class="hero__cta">
-          <a href="#newsletter" class="button button--primary">Get Started</a>
-          <a href="#resources" class="button button--secondary">Explore Resources</a>
+    <!-- Hero (V2) -->
+    <section id="hero" class="hero hero--v2 section">
+      <div class="hero--v2__bg" aria-hidden="true"></div>
+      <div class="container hero--v2__content">
+        <h1 class="hero--v2__title">
+          Launch your <span class="hero--v2__highlight">AI startup</span> with clarity
+        </h1>
+        <p class="hero--v2__subtitle">
+          A calm, proven path from <strong>idea → MVP → first customers</strong>. Get the free Starter Kit and weekly founder tips.
+        </p>
+
+        <div class="hero--v2__cta">
+          <a href="#newsletter" class="button button--primary hero--v2__button">Get the free Starter Kit</a>
+          <a href="#resources" class="button button--secondary hero--v2__button">Preview resources</a>
+        </div>
+
+        <ul class="hero--v2__benefits" role="list">
+          <li>Step‑by‑step playbooks</li>
+          <li>No‑fluff tool picks</li>
+          <li>Checklists that ship</li>
+        </ul>
+
+        <div class="hero--v2__trust">
+          <div class="hero--v2__avatars" aria-hidden="true">
+            <span class="avatar"></span>
+            <span class="avatar"></span>
+            <span class="avatar"></span>
+            <span class="avatar"></span>
+          </div>
+          <p class="hero--v2__trust-copy">Join <strong>3,200+ founders</strong> getting practical, bias‑free guidance.</p>
         </div>
       </div>
     </section>
 
-    <!-- About (short, scannable) -->
+    <!-- About -->
     <section id="about" class="about section">
       <div class="container">
         <h2 class="section__title">What is Starter Lab?</h2>
@@ -63,7 +85,7 @@
       </div>
     </section>
 
-    <!-- Benefits (icons refined to 24–32px, consistent line style, better spacing) -->
+    <!-- Benefits -->
     <section id="benefits" class="benefits section">
       <div class="container">
         <h2 class="section__title">How Starter Lab helps</h2>
@@ -100,7 +122,7 @@
                 <rect x="9" y="9" width="6" height="6"/>
                 <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
                 <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
-                <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="20" y1="9" x2="23" y1="9"/><line x1="20" y1="14" x2="23" y2="14"/>
                 <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
               </svg>
             </div>
@@ -111,39 +133,51 @@
       </div>
     </section>
 
-    <!-- Resources -->
+    <!-- Resources (card polish) -->
     <section id="resources" class="resources section">
       <div class="container">
         <h2 class="section__title">Featured resources</h2>
         <div class="resource-list">
           <article class="resource-card">
-            <h3 class="resource-card__title">AI Startup 101: Quick Guide</h3>
+            <div class="resource-card__thumb" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon icon--thumb"><path d="M4 6h16v12H4z"/><path d="M4 10h16"/></svg>
+            </div>
+            <h3 class="resource-card__title"><a href="#" class="resource-card__link">AI Startup 101: Quick Guide</a></h3>
             <p class="resource-card__desc">The fundamentals of AI startups, explained simply.</p>
-            <a href="#" class="resource-card__link" aria-label="View AI Startup 101 Quick Guide">View</a>
+            <a href="#" class="resource-card__cta" aria-label="View AI Startup 101 Quick Guide">View</a>
           </article>
 
           <article class="resource-card">
-            <h3 class="resource-card__title">Beginner’s Guide to MVPs</h3>
+            <div class="resource-card__thumb" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon icon--thumb"><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+            </div>
+            <h3 class="resource-card__title"><a href="#" class="resource-card__link">Beginner’s Guide to MVPs</a></h3>
             <p class="resource-card__desc">A practical path to your first Minimum Viable Product.</p>
-            <a href="#" class="resource-card__link" aria-label="View Beginner’s Guide to MVPs">View</a>
+            <a href="#" class="resource-card__cta" aria-label="View Beginner’s Guide to MVPs">View</a>
           </article>
 
           <article class="resource-card">
-            <h3 class="resource-card__title">Top 10 AI Tools for Startups</h3>
+            <div class="resource-card__thumb" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon icon--thumb"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>
+            </div>
+            <h3 class="resource-card__title"><a href="#" class="resource-card__link">Top 10 AI Tools for Startups</a></h3>
             <p class="resource-card__desc">Save time and money with these proven picks.</p>
-            <a href="#" class="resource-card__link" aria-label="View Top 10 AI Tools for Startups">View</a>
+            <a href="#" class="resource-card__cta" aria-label="View Top 10 AI Tools for Startups">View</a>
           </article>
 
           <article class="resource-card">
-            <h3 class="resource-card__title">Startup Launch Checklist</h3>
+            <div class="resource-card__thumb" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon icon--thumb"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>
+            </div>
+            <h3 class="resource-card__title"><a href="#" class="resource-card__link">Startup Launch Checklist</a></h3>
             <p class="resource-card__desc">A clean list to keep momentum to launch day.</p>
-            <a href="#" class="resource-card__link" aria-label="View Startup Launch Checklist">View</a>
+            <a href="#" class="resource-card__cta" aria-label="View Startup Launch Checklist">View</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Testimonials (slightly tighter) -->
     <section id="testimonials" class="testimonials section">
       <div class="container">
         <h2 class="section__title">What new founders say</h2>
@@ -163,24 +197,24 @@
     <!-- Newsletter -->
     <section id="newsletter" class="newsletter section">
       <div class="container">
-        <h2 class="section__title">Join our newsletter</h2>
-        <p class="newsletter__text">Weekly tips, tools, and checklists to launch and grow your startup. No spam — ever.</p>
+        <h2 class="section__title">Get the free Starter Kit</h2>
+        <p class="newsletter__text">Download the <strong>AI Startup Starter Kit (PDF)</strong> + get weekly founder tips. No spam, unsubscribe anytime.</p>
 
         <form action="#" method="get" class="newsletter__form">
           <label for="email" class="visually-hidden">Email address</label>
           <input type="email" id="email" name="email" class="newsletter__input" placeholder="Enter your email" required />
-          <button type="submit" class="button button--primary newsletter__button">Subscribe</button>
+          <button type="submit" class="button button--primary newsletter__button">Send me the Starter Kit</button>
         </form>
 
         <p class="newsletter__note">We respect your privacy. Unsubscribe anytime.</p>
       </div>
     </section>
 
-    <!-- Final CTA -->
+    <!-- Final CTA (differentiated) -->
     <section class="cta-band section">
       <div class="container cta-band__inner">
-        <h2 class="cta-band__title">Ready to launch your idea?</h2>
-        <a href="#newsletter" class="button button--primary cta-band__button">Get Started</a>
+        <h2 class="cta-band__title">Ready to make real progress this week?</h2>
+        <a href="#resources" class="button button--primary cta-band__button">Preview resources</a>
       </div>
     </section>
   </main>
@@ -216,6 +250,7 @@
   <script>
     // Mobile nav toggle + focus trap + section highlighting + reduced motion respect
     (function () {
+      document.body.classList.remove('no-js');
       const toggle = document.querySelector('.header__toggle');
       const nav = document.getElementById('nav-menu');
       const links = nav.querySelectorAll('a.nav__link');
